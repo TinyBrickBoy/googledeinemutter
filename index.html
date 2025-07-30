@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>413. Das ist ein Fehler. - googldeinemutter</title>
+    <style>
+        body {
+            font-family: arial, sans-serif;
+            margin: 0;
+            padding: 40px;
+            background-color: #fff;
+            color: #222;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        .logo {
+            font-size: 90px;
+            font-weight: normal;
+            margin-bottom: 40px;
+            letter-spacing: -5px;
+        }
+
+        .logo .g1 { color: #4285f4; }
+        .logo .a1 { color: #ea4335; }
+        .logo .a2 { color: #fbbc05; }
+        .logo .g2 { color: #4285f4; }
+        .logo .l { color: #34a853; }
+        .logo .e { color: #ea4335; }
+
+        .content {
+            flex: 1;
+            max-width: 600px;
+        }
+
+        .error-code {
+            font-size: 28px;
+            color: #222;
+            margin: 40px 0 20px 0;
+            font-weight: normal;
+        }
+
+        .error-message {
+            font-size: 16px;
+            color: #222;
+            line-height: 1.4;
+            margin: 0;
+        }
+
+        .robot-container {
+            margin-left: 40px;
+            margin-top: 60px;
+        }
+
+        .robot {
+            width: 300px;
+            height: 350px;
+            position: relative;
+        }
+
+        .robot svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            
+            .robot-container {
+                margin-left: 0;
+                margin-top: 40px;
+                align-self: center;
+            }
+            
+            .robot {
+                width: 250px;
+                height: 290px;
+            }
+            
+            .logo {
+                font-size: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="logo" style="font-size: 60px; letter-spacing: -2px;">
+        <span class="g1">g</span><span class="a1">o</span><span class="a2">o</span><span class="g2">g</span><span class="l">l</span><span class="e">d</span><span class="g1">e</span><span class="a1">i</span><span class="a2">n</span><span class="g2">e</span><span class="l">m</span><span class="e">u</span><span class="g1">t</span><span class="a1">t</span><span class="a2">e</span><span class="g2">r</span>
+    </div>
+    
+    <div class="container">
+        <div class="content">
+            <h1 class="error-code">413. Das ist ein Fehler.</h1>
+            <p class="error-message">Ihr Client hat eine Anfrage gestellt, die zu groß war. Das ist alles was wir wissen.</p>
+        </div>
+        
+        <div class="robot-container">
+            <div class="robot">
+                <svg viewBox="0 0 300 350" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Robot illustration -->
+                    <g fill="none" stroke="#6fa8dc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <!-- Head/Main body -->
+                        <rect x="80" y="60" width="140" height="120" rx="15" fill="#f0f8ff" stroke="#6fa8dc" stroke-width="3"/>
+                        
+                        <!-- Antenna -->
+                        <line x1="150" y1="60" x2="150" y2="30"/>
+                        <circle cx="150" cy="25" r="8" fill="#6fa8dc"/>
+                        
+                        <!-- Eyes -->
+                        <circle cx="110" cy="100" r="12" fill="#6fa8dc"/>
+                        <circle cx="190" cy="100" r="12" fill="#6fa8dc"/>
+                        <circle cx="110" cy="100" r="6" fill="white"/>
+                        <circle cx="190" cy="100" r="6" fill="white"/>
+                        
+                        <!-- Mouth (sad expression) -->
+                        <path d="M 130 140 Q 150 125 170 140" stroke="#6fa8dc" stroke-width="3" fill="none"/>
+                        
+                        <!-- Body -->
+                        <rect x="100" y="180" width="100" height="80" rx="10" fill="#f0f8ff" stroke="#6fa8dc" stroke-width="3"/>
+                        
+                        <!-- Chest panel -->
+                        <rect x="120" y="200" width="60" height="40" rx="5" fill="white" stroke="#6fa8dc"/>
+                        <circle cx="140" cy="215" r="3" fill="#6fa8dc"/>
+                        <circle cx="160" cy="215" r="3" fill="#6fa8dc"/>
+                        <rect x="135" y="225" width="30" height="3" fill="#6fa8dc"/>
+                        
+                        <!-- Arms -->
+                        <rect x="40" y="190" width="60" height="20" rx="10" fill="#f0f8ff" stroke="#6fa8dc" stroke-width="2"/>
+                        <rect x="200" y="190" width="60" height="20" rx="10" fill="#f0f8ff" stroke="#6fa8dc" stroke-width="2"/>
+                        
+                        <!-- Hands -->
+                        <circle cx="30" cy="200" r="15" fill="#f0f8ff" stroke="#6fa8dc" stroke-width="2"/>
+                        <circle cx="270" cy="200" r="15" fill="#f0f8ff" stroke="#6fa8dc" stroke-width="2"/>
+                        
+                        <!-- Legs -->
+                        <rect x="120" y="260" width="25" height="60" rx="5" fill="#f0f8ff" stroke="#6fa8dc" stroke-width="2"/>
+                        <rect x="155" y="260" width="25" height="60" rx="5" fill="#f0f8ff" stroke="#6fa8dc" stroke-width="2"/>
+                        
+                        <!-- Feet -->
+                        <ellipse cx="132" cy="330" rx="20" ry="8" fill="#6fa8dc"/>
+                        <ellipse cx="167" cy="330" rx="20" ry="8" fill="#6fa8dc"/>
+                        
+                        <!-- Broken parts/sparks -->
+                        <path d="M 25 180 L 35 170 M 30 175 L 40 175 M 35 180 L 45 170" stroke="#ff6b6b" stroke-width="2"/>
+                        <path d="M 270 180 L 280 170 M 275 175 L 285 175 M 280 180 L 290 170" stroke="#ff6b6b" stroke-width="2"/>
+                        
+                        <!-- Screws -->
+                        <circle cx="90" cy="70" r="3" fill="#6fa8dc"/>
+                        <circle cx="210" cy="70" r="3" fill="#6fa8dc"/>
+                        <circle cx="90" cy="170" r="3" fill="#6fa8dc"/>
+                        <circle cx="210" cy="170" r="3" fill="#6fa8dc"/>
+                        
+                        <!-- Tool scattered around -->
+                        <rect x="10" y="280" width="25" height="8" rx="4" fill="#ddd" stroke="#999"/>
+                        <circle cx="280" cy="290" r="8" fill="#ddd" stroke="#999"/>
+                        <polygon points="250,310 260,300 270,310 260,320" fill="#ddd" stroke="#999"/>
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </div>
+    
+    <footer style="margin-top: auto; padding-top: 40px; text-align: center; color: #666; font-size: 12px; border-top: 1px solid #e0e0e0;">
+        <p>Diese Seite ist nicht mit Google Inc. oder Alphabet Inc. affiliiert. "googldeinemutter" ist eine Parodie zu Unterhaltungszwecken.</p>
+    </footer>
+</body>
+</html>
